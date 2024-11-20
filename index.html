@@ -3,131 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Godwin Trenickers</title>
+    <meta name="theme-color" content="#000000"> <!-- Set the theme color to black -->
+
+    <title>Ayosa cake and pastry</title>
     <link rel="stylesheet" href="index.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons for Social Media -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <header>
       <nav>
-        <div class="logo">Trenickers</div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html"> Contact</a></li>
+        <h1 class="logo">Ayosa</h1>
+        <ul id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <h1>Welcome to Trenickers</h1>
-      <p>Your one-stop shop for trendy sneakers</p>
-    </section>
-
-    <!--product section-->
-    <section class="products">
-      <div class="product-card">
-        <img
-          src="https://images.unsplash.com/photo-1698995475439-f6fa0734e30e?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <h3>Nike Air max</h3>
-        <p>$120:00</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </section>
-
-    <!--cart button-->
-    <a href="#" class="cart"> cart (0) </a>
-
-    <!--product section-->
-    <section class="products">
-      <div class="product-card">
-        <img
-          src="https://images.unsplash.com/photo-1636718283028-bb6845dbf3fb?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
-        />
-        <h3>Nike Air max</h3>
-        <p>$175:00</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </section>
-
-    <!--cart button-->
-    <a href="#" class="cart"> cart (0) </a>
-    <!--product section-->
-    <section class="products">
-      <div class="product-card">
-        <img
-          src="https://images.unsplash.com/photo-1634320498229-0b8c7d009fe7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <h3>Nike Air max</h3>
-        <p>$200:00</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </section>
-
-    <!--cart button-->
-    <a href="#" class="cart"> cart (0) </a>
-
-    <!--product section-->
-    <section class="products">
-      <div class="product-card">
-        <img
-          src="https://images.unsplash.com/photo-1641745900322-df0427549fab?q=80&w=866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <h3>Nike Air max</h3>
-        <p>$196:98</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </section>
-
-    <!--cart button-->
-    <a href="#" class="cart"> cart (0) </a>
-
-    <!--product section-->
-    <section class="products">
-      <div class="product-card">
-        <img
-          src=" https://images.unsplash.com/photo-1622831617330-bc799d6236b4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <h3>Nike Air max</h3>
-        <p>$278:78</p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-    </section>
-
-    <!--cart button-->
-    <a href="#" class="cart"> cart (0) </a>
-    <footer>
-      <div class="footer-content">
-        <h3>Trenickers</h3>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to Blizz pastry and hair design</h2>
         <p>
-          Discover the best shoes from top brands, only at Trenickers. Step up
-          your style game with our premium collection.
+          Experience luxurious hairstyles and mouth-watering cakes, chinchin and
+          doughnuts like never before!
         </p>
-        <ul class="socials">
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=100092969336878&mibextid=LQQJ4d"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/@thereal_ocboy?_t=8rMyk4DZsm7&_r=1"
-              >Tik Tok</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/efe_of_benin?igsh=bW56bzNwcWVmN2dk&utm_source=qr"
-              >Instagram</a
-            >
-          </li>
-        </ul>
+        <p>We deliver anywhere in Nigeria</p>
+        <div class="buttons">
+          <a href="#about" class="cta-btn">Our Services</a>
+          <a
+            href="https://wa.me/2349161033413"
+            target="_blank"
+            class="cta-btn whatsapp-btn"
+          >
+            <i class="fab fa-whatsapp"></i> Chat with Us
+          </a>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Trenickers | All Rights Reserved</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-cards">
+          <div class="service-card">
+            <img
+              src="./images//hair5.jpg"
+              alt="Beautiful Hairstyles"
+            />
+            <h3>Hairstyling</h3>
+            <p>
+              From braided wigs to elegant updos, our hairstyles make you stand
+              out.
+            </p>
+          </div>
+          <div class="service-card">
+            <img
+              src="./images//cake3.jpg"
+              alt="Delicious Cakes"
+            />
+            <h3>Cakes</h3>
+            <p>
+              Indulge in our freshly baked cakes – perfect for any occasion.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="product-section">
+      <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="product-cards">
+          <div class="product-card">
+            <img src="./images/wig.jpg" alt="Glamour Hairstyling" />
+            <h3>Luxury Wigs and Hairstyle</h3>
+            <p>
+              Our luxury hairstyles are crafted to give you a flawless look
+              every time.
+            </p>
+          </div>
+          <div class="product-card">
+            <img src="./images//cake1.jpg" alt="Birthday Cakes" />
+            <h3>Birthday Cakes</h3>
+            <p>Delicious and creative cakes for your special celebrations.</p>
+          </div>
+          <div class="product-card">
+            <img src="./images/chinchin.jpg" alt="chinchin" />
+            <h3>Chin chin</h3>
+            <p>Crunchy chinchin just for your taste.</p>
+          </div>
+          <div class="product-card">
+            <img src="./images//cake2.jpg" alt="Special Occasion Cakes" />
+            <h3>Special Cakes</h3>
+            <p>
+              Cakes tailored for any special occasion, from weddings to
+              birthdays.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>
+          We'd love to hear from you! Reach out and let's make something amazing
+          together.
+        </p>
+        <p><strong>Address:</strong> 123 Ayosa Avenue, Lagos, Nigeria</p>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com" target="_blank" class="social-icon"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://wa.me/2349158537702"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Ayosa Salon & Cakes. All rights reserved.</p>
     </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="index.js"></script>
   </body>
 </html>
